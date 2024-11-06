@@ -216,6 +216,14 @@ func getSubscriptionForFreePlan() *v1pb.Subscription {
 		Seats:            5,
 		ShortcutsLimit:   100,
 		CollectionsLimit: 5,
-		Features:         []string{},
+		Features:         []string{
+			// These strings can be found in ./feature_matrix.go
+			"ysh.slash.sso",
+			"ysh.slash.advanced-analytics",
+			"ysh.slash.unlimited-accounts",
+			"ysh.slash.unlimited-shortcuts",
+			"ysh.slash.unlimited-collections",
+			"ysh.slash.custom-branding",
+		},
 	}
 }
